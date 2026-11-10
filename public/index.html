@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#eaf7f7" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Water Break" />
+  <meta name="description" content="Gentle hourly reminders to drink water." />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+  <link rel="icon" href="/icons/icon-192.png" type="image/png" />
+  <link rel="stylesheet" href="/styles.css" />
+  <title>Water Break • Hourly reminders</title>
+</head>
+<body>
+  <main class="page">
+    <div class="topline"><span class="mark">◌</span> WATER BREAK <span class="sparkle">✦</span></div>
+    <section class="card" aria-labelledby="title">
+      <div class="illustration" aria-hidden="true">
+        <span class="orbit orbit-one"></span>
+        <span class="orbit orbit-two"></span>
+        <span class="bubble bubble-one"></span>
+        <span class="bubble bubble-two"></span>
+        <div class="droplet">
+          <svg viewBox="0 0 80 106" xmlns="http://www.w3.org/2000/svg"><path d="M40 2C32 21 7 45 7 68c0 22 14.5 36 33 36s33-14 33-36C73 45 48 21 40 2Z" fill="url(#water)"/><path d="M23 56c-5 9-5 20 1 27" stroke="white" opacity=".75" stroke-width="7" stroke-linecap="round" fill="none"/><defs><linearGradient id="water" x1="15" y1="15" x2="75" y2="98"><stop stop-color="#79d8e1"/><stop offset="1" stop-color="#108b9e"/></linearGradient></defs></svg>
+        </div>
+        <span class="star star-one">✦</span><span class="star star-two">✧</span>
+      </div>
+      <div class="eyebrow">A SMALL ACT OF SELF-CARE</div>
+      <h1 id="title">A little reminder<br />to <em>drink water.</em></h1>
+      <p class="subtitle">A gentle nudge every hour, right on your iPhone. No accounts, no clutter.</p>
+
+      <div class="feature"><span class="clock-icon" aria-hidden="true">◷</span><span>One reminder every <strong>60 minutes</strong></span></div>
+
+      <div id="install-guide" class="install-guide" hidden>
+        <div class="guide-heading">First, add this website to your Home Screen</div>
+        <p>In Safari, tap the <strong>Share</strong> icon, choose <strong>Add to Home Screen</strong>, then open <strong>Water Break</strong> from your Home Screen.</p>
+      </div>
+
+      <button id="enable" class="primary" type="button" disabled>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9ZM10 21h4"/></svg>
+        <span id="enable-label">Preparing reminders…</span>
+      </button>
+      <button id="test" class="secondary" type="button" hidden>Send a test notification</button>
+      <button id="stop" class="text-button" type="button" hidden>Turn off reminders</button>
+      <div id="status" class="status" role="status" aria-live="polite">Checking notification support…</div>
+    </section>
+    <p class="footer">Made for small, feel-good moments <span>✳</span></p>
+  </main>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "id": "/",
+  "name": "Water Break",
+  "short_name": "Water Break",
+  "description": "A friendly hourly water reminder.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#eaf7f7",
+  "theme_color": "#eaf7f7",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
